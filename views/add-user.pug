@@ -1,0 +1,11 @@
+extends layouts/root
+
+block styles
+  link(rel="stylesheet", href="/css/add-user.css")
+
+block content
+  form(class="user-form", action="/users/add", method="POST")
+    .form-control
+      label(for="user")
+      input(type="text", name="userName", id='user')
+    button(type="submit") Add user

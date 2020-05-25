@@ -1,0 +1,10 @@
+extends layouts/root
+
+block styles
+  link(rel="stylesheet", href="/css/users.css")
+
+block content
+  div.user-content
+    ul.user-list
+      each u in user
+        li.user-list__item #{u.name}

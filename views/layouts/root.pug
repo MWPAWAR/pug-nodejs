@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Shop
+    link(rel="stylesheet", href="/css/main.css")
+    block styles
+  body
+    header
+      ul.header-nav
+        li.header-nav__item
+          a(href="/" class=(path === "/" ? "active" : "")) Shop
+        li.header-nav__item
+          a(href="/users", class=(path === "/users" ? "active" : "")) User list
+        li.header-nav__item
+          a(href="/users/add", class=(path === "/users/add" ? "active" : "")) Add user
+    block content

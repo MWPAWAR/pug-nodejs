@@ -1,0 +1,15 @@
+.user-content {
+  text-align: center;
+}
+
+.user-list {
+  padding: 2rem;
+}
+
+.user-list__item {
+  list-style-type: circle;
+  text-align: left;
+  font-size: 2rem;
+  color: green;
+  margin: 0.5rem;
+}
